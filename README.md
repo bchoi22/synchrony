@@ -1,2 +1,9 @@
-# synchrony
-Academic paper defining similarity of time series for a given rolling window size.
+# ABSTRACT
+Much research has been conducted studying the movement of financial products as time series data. These products which move as a stochastic process are well suited to be studied using a parametric models such as ARIMA and are well-defined using such models. It is reasonable to see if two time series can be formulated as a mapping of one another. One way to do this would be to determine whether these two time series are similar. We would like to provide a novel definition of event synhcrony between two time series, and use financial data as a motivating example. To decide which financial products should be compared to one another, we use, as a prior, a dendogram. In addition to providing us a heuristic to choose which products to compare, this visual also gives researchers in industry a higher level representation of the relationship between products.
+
+# High Level Overview
+Financial products are well defined as stochastic processes. It is of interest to people in both industry and research to study whether two time series can be studied by defining a mapping between the two time series. To do this, one must define an event of Synchrony. Our project proposes a novel definition for event synchrony as well as a method for detecting event synchrony between two time series.
+
+Our data was curated from Quandl, who provides an API for us to load the data directly into R, although API’s exist for Python use as well. The data in question is commodity prices curated from the Chicago Mercantile Exchange and Chicago Board of Trade. Various products were included ranging from currencies, to metals, to agricultural products. The choice was not arbritary but because this was some of the only free data available using Quandl. Other data can be used should an individual have the appropriate Quandl Subscription.
+
+We believe this high dimensional time series contains some underlying structure. Using a network representation of this data, we would like to extract some meaningful structure from the data.
